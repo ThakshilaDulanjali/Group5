@@ -1,1 +1,1 @@
-# Group5
+# Gym Management System
