@@ -9,7 +9,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TrainerComponent } from './trainer/trainer.component';
-import { TrainorComponent } from './trainor/trainor.component';
 import { TraineeComponent } from './trainee/trainee.component';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { TraineeComponent } from './trainee/trainee.component';
     LoginComponent,
     SignUpComponent,
     TrainerComponent,
-    TrainorComponent,
     TraineeComponent
   ],
   imports: [
