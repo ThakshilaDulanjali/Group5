@@ -1,1 +1,88 @@
-<p>trainee works!</p>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Join gym -- online</title>
+      <meta name="Description" content="Online gym management system">
+      <link rel="stylesheet" type="text/css" href="stylef.css" />
+    </head>
+    
+    <body>
+      <header>
+        <div class="page">
+          <div class="header1"><a href="index.html"><img src="logo111.gif" width="150" height="49" id="logo" alt="Fit-Club. Get trained professionals" /></a></div>
+          <div class="header2 center">
+            <img src="diamond.png" alt="" width="82" height="92" class="png" />
+                </div>
+                <div class="header3">
+            <nav>
+                  <a href="index.html">Home</a>
+                  <a href="about_us.html">About Us</a>
+                 
+                  <a href="contact_us.html">Contact Us</a>
+                  <a href="check.txt">FAQ</a>
+                  </nav>
+          </div>
+        </div>
+      </header>
+      <section id = "content" class = "page-internal">
+      <div class="columns1">
+      <form action="register_member.php" method = "post">
+        
+          <fieldset class="register">
+            <div class="legend1">
+              <legend>Member Registration:</legend>
+            </div>
+            <ul>
+            <label>
+              <li>Member name </br>: <input type="text" name="firstname" placeholder="First" size="15" maxlength="15" required="required" >
+                          <input type="text" name="lastname" placeholder="Last" size="15" maxlength="15" required="required" >
+            </li>
+            </label>
+            <label>
+              <li>Email Address   : <input type="email" name="Email" size = "40" required = "required" ></li>
+            </label>
+            <label>
+              <li>Username  : <input type="text" name="username" size="15" maxlength="100" required = "required"></li>
+            </label>
+            <label>
+              <li>Password   : <input type="password" name="password" size="15" maxlength="30" required = "required"></li>
+            </label>
+            <label>
+              <li>Confirm Password   : <input type="password" name="confirmpassword" size="15" maxlength="30" required = "required"></li>
+            </label>
+            <label>
+              <li>Sex  : <input type="text" name="sex" size = "10" maxlength="12" required = "required"></li>
+            </label>
+			<label>
+  			   <li>Date of birth   : <input type="date" name="dateofbirth" size="15" required = "required"></li>
+  			</label>
+            <label>
+              <li>Contact number  : <input type="text" name="ContactNo" size = "12" maxlength="100" pattern="[0-9]*"required = "required"></li>
+            </label>
+            <label>
+              <li>Height   : <input type="date" name="height" size="10" required = "required" placeholder ="cm"></li>
+            </label>
+            <label>
+              <li>Weight :<input type="text" name="weight" size = "6" placeholder = "kg" pattern="[0-9]*" required ="required"></li>
+            </label>
+            <label>
+              <li>Recommended by  : <input type="text" name="recommendby" size="20" ></li>
+            </label>
+            <p>Pre-existing medical conditions</p>
+              <textarea name = "condition" cols = 20 rows = 4 placeholder="Enter here.."></textarea>
+            <li><input type ="image" src="submit.png" width = "107" height ="44"></li>
+          
+          </fieldset>
+            </ul>
+            </form>
+        </div>
+        </section>
+        <footer id="bottom">
+      <div class = footer-links>
+      <div id = facebook>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbakchodiness%2F&width=300&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId" width="300" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\contact-us"
+		},
+		{
+			"path": "..\\home"
+		},
+		{
+			"path": "..\\login"
+		},
+		{
+			"path": "..\\sign-up"
+		},
+		{
+			"path": "..\\trainee"
+		},
+		{
+			"path": "..\\trainer"
+		}
+	]
+}
