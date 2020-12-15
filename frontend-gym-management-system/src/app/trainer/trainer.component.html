@@ -2,7 +2,7 @@
 <?php include("func.php");?>
 <html>
 <head>
-	<title>Members details</title>
+	<title> Trainers details</title>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
@@ -10,34 +10,86 @@
 
  <div class="container">
 <div class="card">
-     <div class="card-body" style="background-color:#3498DB;color:#ffffff;">
+     <div class="card-body" style="background-color:#086499;color:#ffffff;">
          <div class="row">
              <div class="col-md-1">
     <a href="admin-panel.php" class="btn btn-light ">Go Back</a>
              </div>
-             <div class="col-md-3"><h3>Members Details</h3></div>
-             <div class="col-md-8">
-         <form class="form-group" action="trainer_search.php" method="post">
+             <div class="col-md-4"><h3> Trainer Information</h3></div>
+             <div class="col-md-7">
+                <from class="form-group" action="trainer_search.php" method="post">
+                    <div class="row">
+             <div class="col-md-10"><input type="text" name="search" class="form-control" placeholder="Enter Trainer Name"></div>
+                        <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"> </div></div>           
+                           </form></div></div></div>
+         <form class="form-group" action="patient_search.php" method="post">
           <div class="row">
-   <div class="col-md-10"><input type="text" name="search" class="form-control" placeholder="enter contact"></div>
-              <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"> </div></div>           
+   
+                         
                  </form></div></div></div>
-     <div class="card-body" style="background-color:#3498DB;color:#ffffff;">
+     <div class="card-body" style="background-color:#222324;color:#ffffff;">
          <div class="card-body">
     <table class="table table-hover">
         <thead>
      <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>Trainer id</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>Date of Birth</th>
+            <th>Sex</th>
+         <th>Mobile Number</th>
          <th>Email id</th>
-         <th>Member ID</th>
-         <th>Trainer ID</th>
+         <th>Role</th>
+         <th>Qualifications</th>
+         <th>Available Days</th>
+         <th>Free Time Period</th>
+         
         </tr>   
         </thead>
         <tbody>
-          <?php get_patient_details(); ?>
+          <?php get_trainer(); ?>
         </tbody>
     </table>
+    <div class="card-body" style="background-color:#db3442;color:FFFFFF;">
+                <h3>Register new Trainer</h3>
+            </div>
+                <div class="card-body"></div>
+                <form class="form-group" action="func.php" method="post">
+                <label>User Name</label>
+<input type="text" name="User Name" class="form-control"><br>
+ <label>Password</label>
+                    <input type="text" name="Name" class="form-control"><br>
+                    <label>Confirm Password</label>
+<input type="text" name="Confirm Password" class="form-control"><br> 
+ <label>First Name</label>
+ <input type="text" name="First Name" class="form-control"><br>
+ <label>Last Name</label>
+ <input type="text" name="Last Name" class="form-control"><br>
+ <label>Date of Birth</label>
+ <input type="text" name="Date of Birth" class="form-control"><br>
+ <label>Address</label>
+ <input type="text" name="Address" class="form-control"><br>
+ <label>Email id</label>
+ <input type="text" name="Email id" class="form-control"><br>
+ <label>Contact Number</label>
+ <input type="text" name="Contact Number" class="form-control"><br>
+ <label>Sex</label>
+ <input type="text" name="Sex" class="form-control"><br>
+ <label>Height</label>
+ <input type="text" name="Height" class="form-control"><br>
+ <label>Weight</label>
+ <input type="text" name="Weight" class="form-control"><br>
+ <label>Work Experience</label>
+ <input type="text" name="Work Experience" class="form-control"><br>
+ <label>Specialization</label>
+ <input type="text" name="Specialization" class="form-control"><br>
+ <label>Qualifications</label>
+ <input type="text" name="Qualifications" class="form-control"><br>
+ <label>Expected Salary</label>
+ <input type="text" name="Spected Salary" class="form-control"><br>
+ <double_label>Other Notes</double_label>
+ <input type="text" name="Other Notes" class="form-control"><br>
+<input type="submit" class="btn btn-primary" name="tra_submit" value="Register">
      </div>
     </div>
     </div>
