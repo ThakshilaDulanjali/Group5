@@ -1,81 +1,21 @@
-<html>
-    <head>
-        <title>
-            Sign up
-            </title>
-            <style>
-                BODY{
-                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                    background-color: black;
-                } 
-                *{
-                    background-origin: border-box; 
-                }
-                .container{
-                    padding: 16px;
-                    background-color: white;
-                }
-                input[type=text],input[type=email],input[type=password]{
-                    width: 100%;
-                    height: 5px;
-                    padding: 15px;
-                    margin: 5px 0 22px 0;
-                    display: inline-block;
-                    border: none;
-                    outline: none;
-                    background: whitesmoke;
-                }
-                input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
-                    background-color: white;
-                    outline: none;
-                }
-                .registerbtn{
-                    background-color: turquoise;
-                    outline-color: black;
-                    padding: 16px 20px;
-                    margin: 2px;
-                    cursor: pointer;
-                    width: 1000px;
-                    opacity: 0.9;
-                    
-                }
-                .registerbtn{
-                    opacity: 1;
-                }
-                .{
-                    color: blue;
-                }
-                .login{
-                    background:whitesmoke;
-                    text-align: center;
-                }
-                </style>
-            </head>
-            <body>
-                <div class="container">
-                <form>
-                    <h1>Sign up</h1>
-                    <p>Please fill this form to create an account</p>
-                    <hr />
-                    <label>Name</label>
-                    <input type="text" placeholder="Name" />
-                    <hr />
-                    <label>Email</label>
-                    <input type="text" placeholder="Email" />
-                    <hr />
-                    <label>Password</label>
-                    <input type="password" placeholder="Password">
-                    <hr>
-                    <label>Re-password</label>
-                    <input type="password" placeholder="Re-password" >
-                    <p>By creating an account you agree to our <a href="#">Terms and Privacy</a>></p>
-                
-                    <button class="registerbtn">Sign up</button>
-                    <div class="login">
-                    <p>Already have account?<a href="#">Login</a></p>
-                </form>
-              </div>
-            </body>
-        </html>
-
-
+<div id="login-box">
+    <div class="left">
+      <h1>Sign up</h1>
+      
+      <input type="text" name="username" placeholder="Username" />
+      <input type="text" name="email" placeholder="E-mail" />
+      <input type="password" name="password" placeholder="Password" />
+      <input type="password" name="password2" placeholder="Retype password" />
+      
+      <input type="submit" name="signup_submit" value="Sign me up" />
+    </div>
+    
+    <div class="right">
+      <span class="loginwith">Sign in with<br />social network</span>
+      
+      <button class="social-signin facebook">Log in with facebook</button>
+      <button class="social-signin twitter">Log in with Twitter</button>
+      <button class="social-signin google">Log in with Google+</button>
+    </div>
+    <div class="or">OR</div>
+  </div>
