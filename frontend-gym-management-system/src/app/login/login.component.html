@@ -1,37 +1,25 @@
-<html>
-<head>  
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
- </head>
- </html>
-
- <html>    
- <head>    
-     <title>Login Form</title>    
-     <link rel="stylesheet" type="text/css" href="css/style.css">    
- </head>    
- <body>    
-     <h2>Login Page</h2><br>    
-     <div class="login">    
-     <form id="login" method="get" action="login.php">    
-         <label><b>User Name     
-         </b>    
-         </label>    
-         <input type="text" name="Uname" id="Uname" placeholder="Username">    
-         <br><br>    
-         <label><b>Password     
-         </b>    
-         </label>    
-         <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-         <br><br>    
-         <input type="button" name="log" id="log" value="Log In Here">       
-         <br><br>    
-         <input type="checkbox" id="check">    
-         <span>Remember me</span>    
-         <br><br>    
-         Forgot <a href="#">Password</a>    
-     </form>     
- </div>    
- </body>    
- </html>    
-
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> LogIn </h2>
+      
   
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../../assets/imagess/download.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form>
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
