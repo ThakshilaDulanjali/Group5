@@ -1,200 +1,67 @@
-<div>
+div id="fh5co-wrapper">
+    <div id="fh5co-page">
+    <div id="fh5co-header">
+      <header id="fh5co-header-section">
+        <div class="container">
+          <div class="nav-header">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <h1 id="fh5co-logo"><a href="index.html">Fit<span>ness</span></a></h1>
+            <!-- START #fh5co-menu-wrap -->
+            <nav id="fh5co-menu-wrap" role="navigation">
+              <ul class="sf-menu" id="fh5co-primary-menu">
+                <li class="active">
+                  <a routerLink="/">Home</a>
+                </li>
+                
 
-  <app-auth-form (submitted)="registerUser($event)">
-    <h1>Register</h1>
-
-    <a routerLink="/auth/login">Already have an account?</a>
-
-    <button type="submit">Create account</button>
-
-    <div class="error" *ngIf="error">{{ error }}</div>
-  </app-auth-form>
-
-</div>
-
-
-
-<!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>Join gym -- online</title>
-      <meta name="Description" content="Online gym management system">
-      <link rel="stylesheet" type="text/css" href="stylef.css" />
-    </head>
-    
-    <body>
-      <header>
-        <div class="page">
-          <div class="header1"><a href="index.html"><img src="logo111.gif" width="150" height="49" id="logo" alt="Fit-Club. Get trained professionals" /></a></div>
-          <div class="header2 center">
-            <img src="diamond.png" alt="" width="82" height="92" class="png" />
-                </div>
-                <div class="header3">
-            <nav>
-                  <a href="index.html">Home</a>
-                  <a href="about_us.html">About Us</a>
-                 
-                  <a href="contact_us.html">Contact Us</a>
-                  <a href="check.txt">FAQ</a>
-                  </nav>
+                <li>
+                  <a routerLink="/login">Login </a>
+                </li>
+                <li><a routerLink="/signup">SignUp</a></li>
+                <li><a routerLink="/trainer">Trainer</a></li>
+                <li><a routerLink="/trainee">Trainee</a></li>
+                <li><a routerLink="/aboutus">About Us</a></li>
+                <li><a routerLink="/contactUs"> Contact Us</a></li>
+                
+              </ul>
+            </nav>
           </div>
         </div>
-      </header>
-      <section id = "content" class = "page-internal">
-      <div class="columns1">
-      <form action="register_member.php" method = "post">
-        
-          <fieldset class="register">
-            <div class="legend1">
-              <legend>Member Registration:</legend>
+      </header>		
+    </div>
+
+<!-- end:fh5co-header -->
+<div class="fh5co-hero">
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/ss.jpg);">
+        <div class="desc animate-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Welcome  Trainee <br> <b>Page</b></h2>
+                        
+                    </div>
+                </div>
             </div>
-            <ul>
-            <label>
-              <li>Member name </br>: <input type="text" name="firstname" placeholder="First" size="15" maxlength="15" required="required" >
-                          <input type="text" name="lastname" placeholder="Last" size="15" maxlength="15" required="required" >
-            </li>
-            </label>
-            <label>
-              <li>Email Address   : <input type="email" name="Email" size = "40" required = "required" ></li>
-            </label>
-            <label>
-              <li>Username  : <input type="text" name="username" size="15" maxlength="100" required = "required"></li>
-            </label>
-            <label>
-              <li>Password   : <input type="password" name="password" size="15" maxlength="30" required = "required"></li>
-            </label>
-            <label>
-              <li>Confirm Password   : <input type="password" name="confirmpassword" size="15" maxlength="30" required = "required"></li>
-            </label>
-            <label>
-              <li>Sex  : <input type="text" name="sex" size = "10" maxlength="12" required = "required"></li>
-            </label>
-			<label>
-  			   <li>Date of birth   : <input type="date" name="dateofbirth" size="15" required = "required"></li>
-  			</label>
-            <label>
-              <li>Contact number  : <input type="text" name="ContactNo" size = "12" maxlength="100" pattern="[0-9]*"required = "required"></li>
-            </label>
-            <label>
-              <li>Height   : <input type="date" name="height" size="10" required = "required" placeholder ="cm"></li>
-            </label>
-            <label>
-              <li>Weight :<input type="text" name="weight" size = "6" placeholder = "kg" pattern="[0-9]*" required ="required"></li>
-            </label>
-            <label>
-              <li>Recommended by  : <input type="text" name="recommendby" size="20" ></li>
-            </label>
-            <p>Pre-existing medical conditions</p>
-              <textarea name = "condition" cols = 20 rows = 4 placeholder="Enter here.."></textarea>
-            <li><input type ="image" src="submit.png" width = "107" height ="44"></li>
-          
-          </fieldset>
-            </ul>
-            </form>
         </div>
-        </section>
-        <footer id="bottom">
-      <div class = footer-links>
-      <div id = facebook>
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fbakchodiness%2F&width=300&layout=standard&action=like&size=small&show_faces=true&share=false&height=80&appId" width="300" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-            </div>
-    </footer>
-    </body>
-</html>
-<div class="meal-form">
-
-  <form [formGroup]="form">
-    <div class="meal-form__name">
-      <label>
-        <h3>Meal name</h3>
-
-        <input
-          type="text"
-          placeholder="e.g. English Breakfast"
-          formControlName="name">
-
-        <div class="error" *ngIf="required">
-          Workout name is required
-        </div>
-      </label>
     </div>
-
-    <div class="meal-form__food">
-      <div class="meal-form__subtitle">
-        <h3>Food</h3>
-
-        <button
-          type="button"
-          class="meal-form__add"
-          (click)="addIngredient()">
-          <img src="assets/images/add-white.svg">
-          Add food
-        </button>
-      </div>
-
-      <div formArrayName="ingredients">
-        <label *ngFor="let c of ingredients.controls; index as i;">
-          <input [formControlName]="i" placeholder="e.g. Eggs">
-
-          <span
-            class="meal-form__remove"
-            (click)="removeIngredient(i)">
-              </span>
-        </label>
-      </div>
-    </div>
-
-    <div class="meal-form__submit">
-      <div>
-        <button
-          type="button"
-          class="button"
-          *ngIf="!exists"
-          (click)="createMeal()">
-          Create meal
-        </button>
-
-        <button
-          type="button"
-          class="button"
-          *ngIf="exists"
-          (click)="updateMeal()">
-          Save
-        </button>
-
-        <a
-          class="button button--cancel"
-          [routerLink]="['../']">
-          Cancel
-        </a>
-      </div>
-
-      <div class="meal-form__delete" *ngIf="exists">
-        <div *ngIf="toggled">
-          <p>Delete item?</p>
-
-          <button
-            class="confirm"
-            type="button"
-            (click)="removeMeal()">
-            Yes
-          </button>
-
-          <button
-            class="cancel"
-            type="button"
-            (click)="toggle()">
-            No
-          </button>
-        </div>
-
-        <button class="button button--delete" type="button" (click)="toggle()">
-          Delete
-        </button>
-      </div>
-    </div>
-
-  </form>
-
 </div>
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<div class="profile-main">
+		<div class="profile-header">
+			<div class="user-detail">
+				<div class="user-image">
+					<img src="http://nicesnippets.com/demo/up-profile.jpg">
+				</div>
+				<div class="user-data">
+					<h2>Member name</h2>
+					<span class="post-label">Trainee</span>
+					<span class="post-label">Speaker</span>
+					<span class="post-label">AMA</span>
+					<p>Trainee Member <strong>NewSpot</strong><br>
+					<i class="fa fa-map-marker" aria-hidden="true"></i> Kegalle,Sri Lanka.
+					</p>
+				</div>
