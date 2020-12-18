@@ -1,102 +1,281 @@
-<!DOCTYPE html>
-<?php include("func.php");?>
-<html>
-<head>
-	<title> Trainers details</title>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-</head>
-<body>
-<div class="jumbotron" style="background: url('images/2.jpg') no-repeat;background-size: cover;height: 300px;"></div>	
 
- <div class="container">
-<div class="card">
-     <div class="card-body" style="background-color:#086499;color:#ffffff;">
-         <div class="row">
-             <div class="col-md-1">
-    <a href="admin-panel.php" class="btn btn-light ">Go Back</a>
-             </div>
-             <div class="col-md-4"><h3> Trainer Information</h3></div>
-             <div class="col-md-7">
-                <from class="form-group" action="trainer_search.php" method="post">
-                    <div class="row">
-             <div class="col-md-10"><input type="text" name="search" class="form-control" placeholder="Enter Trainer Name"></div>
-                        <div class="col-md-2"><input type="submit" name="patient_search_submit" class="btn btn-light" value="Search"> </div></div>           
-                           </form></div></div></div>
-         <form class="form-group" action="patient_search.php" method="post">
-          <div class="row">
-   
-                         
-                 </form></div></div></div>
-     <div class="card-body" style="background-color:#222324;color:#ffffff;">
-         <div class="card-body">
-    <table class="table table-hover">
-        <thead>
-     <tr>
-            <th>Trainer id</th>
-            <th>Full Name</th>
-            <th>Address</th>
-            <th>Date of Birth</th>
-            <th>Sex</th>
-         <th>Mobile Number</th>
-         <th>Email id</th>
-         <th>Role</th>
-         <th>Qualifications</th>
-         <th>Available Days</th>
-         <th>Free Time Period</th>
-         
-        </tr>   
-        </thead>
-        <tbody>
-          <?php get_trainer(); ?>
-        </tbody>
-    </table>
-    <div class="card-body" style="background-color:#db3442;color:FFFFFF;">
-                <h3>Register new Trainer</h3>
+<div id="fh5co-wrapper">
+    <div id="fh5co-page">
+    <div id="fh5co-header">
+      <header id="fh5co-header-section">
+        <div class="container">
+          <div class="nav-header">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <h1 id="fh5co-logo"><a href="index.html">Fit<span>ness</span></a></h1>
+            <!-- START #fh5co-menu-wrap -->
+            <nav id="fh5co-menu-wrap" role="navigation">
+              <ul class="sf-menu" id="fh5co-primary-menu">
+                <li class="active">
+                  <a routerLink="/">Home</a>
+                </li>
+                
+                <li>
+                  <a routerLink="/login">Login </a>
+                </li>
+                <li><a routerLink="/signup">SignUp</a></li>
+                <li><a routerLink="/trainer">Trainer</a></li>
+                <li><a routerLink="/trainee">Trainee</a></li>
+                <li><a routerLink="/aboutus">About Us</a></li>
+                <li><a routerLink="/contactUs"> Contact Us</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>		
+    </div>
+
+<!-- end:fh5co-header -->
+<div class="fh5co-hero">
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/ss.jpg);">
+        <div class="desc animate-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Welcome  Trainer <br> <b>Page</b></h2>
+                        
+                    </div>
+                </div>
             </div>
-                <div class="card-body"></div>
-                <form class="form-group" action="func.php" method="post">
-                <label>User Name</label>
-<input type="text" name="User Name" class="form-control"><br>
- <label>Password</label>
-                    <input type="text" name="Name" class="form-control"><br>
-                    <label>Confirm Password</label>
-<input type="text" name="Confirm Password" class="form-control"><br> 
- <label>First Name</label>
- <input type="text" name="First Name" class="form-control"><br>
- <label>Last Name</label>
- <input type="text" name="Last Name" class="form-control"><br>
- <label>Date of Birth</label>
- <input type="text" name="Date of Birth" class="form-control"><br>
- <label>Address</label>
- <input type="text" name="Address" class="form-control"><br>
- <label>Email id</label>
- <input type="text" name="Email id" class="form-control"><br>
- <label>Contact Number</label>
- <input type="text" name="Contact Number" class="form-control"><br>
- <label>Sex</label>
- <input type="text" name="Sex" class="form-control"><br>
- <label>Height</label>
- <input type="text" name="Height" class="form-control"><br>
- <label>Weight</label>
- <input type="text" name="Weight" class="form-control"><br>
- <label>Work Experience</label>
- <input type="text" name="Work Experience" class="form-control"><br>
- <label>Specialization</label>
- <input type="text" name="Specialization" class="form-control"><br>
- <label>Qualifications</label>
- <input type="text" name="Qualifications" class="form-control"><br>
- <label>Expected Salary</label>
- <input type="text" name="Spected Salary" class="form-control"><br>
- <double_label>Other Notes</double_label>
- <input type="text" name="Other Notes" class="form-control"><br>
-<input type="submit" class="btn btn-primary" name="tra_submit" value="Register">
-     </div>
+        </div>
     </div>
+</div>
+
+
+<div id="fh5co-team-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="heading-section text-center animate-box">
+                    <h2>Meet Our Trainers</h2>
+                    <p>All our trainers are qualified instructors with a passion for fitness.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-1.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mr.Amila Ambethenna</h3>
+                            <span>MAIN AREAS OF SPECIALTY: Life Style Transformation, Personal Training and Small Group Training</span>
+                            <p>He holds a Master of Science degree in Exercise Physiology, Kent State University and Bachelor of Science in  Sports and Exercise Science at University of Sabaragamuwa. He has certified as a Personal Trainer at American College of Sports Medicine. He has completed the Cleveland Half Marathon,2010 and completed in Numerous 5K/10K Races. </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-2.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mr.Oshanda Abeysinghe</h3>
+                            <span>MAIN AREAS OF SPECIALTY: Progressive Resistance Training Programs like Total Body, Functional and Hypertrophy Training, Sport-Specific Conditioning and Training, Personal Training and Small Group Training.</span>
+                            <p>He holds a Bachelor of Science degree in General Studies in Health and Human Performance at Moratuwa University. He has certified as a Conditioning Specialist from the National Strength and Conditioning Association. </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-3.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mrs.Nilmi Fernando</h3>
+                            <span>MAIN AREAS OF SPECIALTY: Strength and Conditioning, Sports Conditioning, General Conditioning, Wellness Counselling and Small Group or Personal Training.</span>
+                            <p>She holds a Bachelor of Science in Health Promotion and Wellness at Missouri Southern State University. She has certified as a Personal Trainer and Strength and Conditioning Specialist from National Strength and Conditioning Association. She has completed the TRX Suspension Training(level 1). She is the main Speaker in the Fitness Association, Sri Lanka. </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-4.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mr.Deshan Warnasooriya</h3>
+                            <span>THE MAIN AREAS OF SPECIALTY: Strength Conditioning and Training, Aging Population, Cardiovascular Conditioning and Training, Weight Management, Personal Training</span>
+                            <p>He holds a Master of Science Degree in Sport Fitness Management at United States Sports Academy and Bachelor of Science degree in Exercise Physiology, Ohio University. He has certified as an Advanced Physical Fitness Specialist and Older Adults Fitness Specialist from the Cooper Institute.He has completed the Functional Movement Screen(Level 1 and 2), TRX Suspension Training(Level 1) and Athletes' Performance, Mentorship Phase 1. He was a coach for American Diabetes Assosiation's Team Diabetes, 2008-2010. </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-5.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mrs.Shyama Gamage</h3>
+                            <span>MAIN AREAS OF SPECIALTY: Core Conditioning, Strength Conditioning, Improving Body Composition, Personal Training and Small Group Training.</span>
+                            <p>She holds a Master of Science in Dietetics and Institutional Administration at Texas Woman's University and a Bachelor of Science degree at University of Peradeniya. She has certified as a Personal Trainer from the National Association of Sports Medicine and a Posture Specialist from the National Posture Institute. </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="team-section-grid animate-box" style="background-image: url(images/trainer-6.jpg);">
+                    <div class="overlay-section">
+                        <div class="desc">
+                            <h3>Mr.Niranjan Kodithuwakku</h3>
+                            <span>MAIN AREAS OF SPECIALTY: Muscle Activation Techniques, Sports Performance, Weight Management, Personal Training and Small Group of Training.</span>
+                            <p>He holds a Bachelor of Science degree in Exercise and Sport Science/Fitness and Wellness at University of Rajarata. He has certified as a MAT Specialist from the National Fitness Association. He has completed the Functional Movement Screen(Level 1), TRX Suspension Training(Level 1) and Acceleration Training, Power Plate, (Level 1). </p>
+                            <p class="fh5co-social-icons">
+                                <a href="#"><i class="icon-twitter-with-circle"></i></a>
+                                <a href="#"><i class="icon-facebook-with-circle"></i></a>
+                                <a href="#"><i class="icon-instagram-with-circle"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
     </div>
-    
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</div>
+
+<div id="fh5co-programs-section" class="fh5co-lightgray-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="heading-section text-center animate-box">
+                    <h2>Our Programs</h2>
+                    <p>Our Fitness Center offer a variety of exciting programs for you throughout the year. We provide safe and comfortable workout environment for your fitness programs. Specially, qualified group fitness instructors and personal trainers will be on hand to tell you how to perform related to your requirements safely and effectively. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-dumbell.svg" alt="Cycling">
+                    <h3>Body Combat</h3>
+                    <p>Body Combat is an exercise that lets you punch and kick your way towards your fitness goals. Not only is it a great whole-body workout for cardio fitness, but it's also super for burning fat, releasing stress and improving your co-ordination. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-yoga.svg" alt="">
+                    <h3>Yoga Programs</h3>
+                    <p>Yoga is not just about bending or twisting the body and holding the breath. Whether it is redusing your blood pressure or raising your pain tolerance. Specially, you can enhance your circulation, improve posture and increase strength. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-cycling.svg" alt="">
+                    <h3>Cycling Program</h3>
+                    <p>Cycling is a wonderful workout that keeps you active. It can help shape a healthy lifestyle, both physically and mentally. Specially, it helps for Weight Management, Leg strength and Core Workout. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-boxing.svg" alt="Cycling">
+                    <h3>Boxing Fitness</h3>
+                    <p>Boxing uses a variety of muscles at one time while requiring rapid movement so its an excellent sport for increasing your cardio endurance. Getting your heart rate up not only helps you lose weight but it helps strengthen your heart, control blood pressure, and reduce the risk of heart disease and type 2 diabetes. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-swimming.svg" alt="">
+                    <h3>Swimming Program</h3>
+                    <p>Swimming is the another valueble fitness program in our fitness center. It truely works your entire body, head to toe. Specially, swimming increases your heart rate without stressing your body, tones muscles, builds strength and builds endurance. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="program animate-box">
+                    <img src="images/fit-massage.svg" alt="">
+                    <h3>Massage</h3>
+                    <p>Massage therapy is extremely benefical in so many ways. Such as, decrease stress, improve flexibility in your muscles, increase immune function and reduce pain. </p>
+                    <span><a href="#" class="btn btn-default">Join Now</a></span>
+                </div>
+            </div>
+
+        </div>
     </div>
-    </body>
-</html>
+</div>
+
+
+
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 animate-box">
+                    <h3 class="section-title">About Us</h3>
+                    <p>Our fitness center offers you a wide range of specially-designed fitness, health and workout sessions conducted by some of the most experienced and skilled fitness trainers in Sri Lanka. Please feel free to talk to us on the best option that would suit your requirement.</p>
+                </div>
+
+                <div class="col-md-4 animate-box">
+                    <h3 class="section-title">Our Address</h3>
+                    <ul class="contact-info">
+                        <li><i class="icon-map-marker"></i>No.202/3, Fit & Lift Fitness Center, Katugasthota Road, Kandy.</li>
+                        <li><i class="icon-phone"></i>+(94)71 2099 943  </li>
+                        <li><i class="icon-envelope"></i><a href="#">info@fitlift.com</a></li>
+                        <li><i class="icon-globe2"></i><a href="#">www.fitlift.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 animate-box">
+                    <h3 class="section-title">Drop us a line</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row copy-right">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <p class="fh5co-social-icons">
+                        <a href="#"><i class="icon-twitter2"></i></a>
+                        <a href="#"><i class="icon-facebook2"></i></a>
+                        <a href="#"><i class="icon-instagram"></i></a>
+                        <a href="#"><i class="icon-dribbble2"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                    </p>
+                    <p>Copyright 2016 Free Html5 <a href="#">Fitness</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
